@@ -1,0 +1,288 @@
+2020-07-01 23:51:27,883:  Encountered the following recoverable error:
+Barcode: 1133421
+Print mode: Manual
+Printer: Fax
+Installed printers: {'Microsoft Print to PDF', 'Brother GTX-4 FileOutput', 'Fax', 'Microsoft XPS Document Writer', 'OneNote for Windows 10'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 158, in get_new_print_job
+    product_info = vuvutv_utils.get_product_info(barcode)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\vuvutv_utils.py", line 27, in get_product_info
+    product_info = data['product']
+TypeError: list indices must be integers or slices, not str
+
+2020-07-02 00:02:23,027:  Encountered the following recoverable error:
+Barcode: 1133421
+Print mode: Manual
+Printer: Fax
+Installed printers: {'Brother GTX-4 FileOutput', 'Microsoft XPS Document Writer', 'Fax', 'OneNote for Windows 10', 'Microsoft Print to PDF'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 158, in get_new_print_job
+    product_info = vuvutv_utils.get_product_info(barcode)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\vuvutv_utils.py", line 27, in get_product_info
+    product_info = data['product']
+TypeError: list indices must be integers or slices, not str
+
+2020-07-02 22:17:05,487:  Encountered the following recoverable error:
+Barcode: 1145992
+Print mode: Automatic
+Printer: OneNote for Windows 10
+Installed printers: {'OneNote for Windows 10', 'Microsoft Print to PDF', 'Brother GTX-4 FileOutput', 'Microsoft XPS Document Writer', 'Fax'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\brother_utils.py", line 51, in create_design
+    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+  File "C:\Users\hotelca\AppData\Local\Programs\Python\Python37\lib\subprocess.py", line 800, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\hotelca\AppData\Local\Programs\Python\Python37\lib\subprocess.py", line 1148, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Users\hotelca\AppData\Local\Programs\Python\Python37\lib\subprocess.py", line 555, in list2cmdline
+    needquote = (" " in arg) or ("\t" in arg) or not arg
+TypeError: argument of type 'int' is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 160, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 236, in create_design_and_send_to_printer
+    print_properties=print_properties)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\brother_utils.py", line 53, in create_design
+    raise CreateARX4DesignError(f'Subrocess Popen failed.\n\n'
+brother_utils.CreateARX4DesignError: Subrocess Popen failed.
+
+cmd: ['C:\\Users\\hotelca\\PycharmProjects\\teerex\\printing\\cli_bin\\GTX4CMD.exe', 'print', '-X', 'C:\\Users\\hotelca\\PycharmProjects\\teerex\\printing\\configs\\color_and_white_default.xml', '-I', 'C:\\Users\\hotelca\\Desktop\\Design\\a201381242df59c1adc616adbac6d2d7.png', '-A', 'C:\\Users\\hotelca\\Desktop\\Design_ARX4\\a201381242df59c1adc616adbac6d2d7.arx4', '-L', '03810000', '-S', '27943193', '-W', 1]
+
+2020-07-02 23:01:25,651:  Encountered the following recoverable error:
+Barcode: 1145992
+Print mode: Automatic
+Printer: OneNote for Windows 10
+Installed printers: {'Fax', 'Microsoft XPS Document Writer', 'OneNote for Windows 10', 'Microsoft Print to PDF', 'Brother GTX-4 FileOutput'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 160, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 236, in create_design_and_send_to_printer
+    print_properties=print_properties)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\brother_utils.py", line 52, in create_design
+    w = get_white_value(print_profile)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\brother_utils.py", line 30, in get_white_value
+    if by_ink.value == 2:
+AttributeError: 'xml.etree.ElementTree.Element' object has no attribute 'value'
+
+2020-07-02 23:03:36,123:  Encountered the following recoverable error:
+Barcode: 1145992
+Print mode: Automatic
+Printer: OneNote for Windows 10
+Installed printers: {'Microsoft Print to PDF', 'Fax', 'Brother GTX-4 FileOutput', 'OneNote for Windows 10', 'Microsoft XPS Document Writer'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 160, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 236, in create_design_and_send_to_printer
+    print_properties=print_properties)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\brother_utils.py", line 52, in create_design
+    w = get_white_value(print_profile)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\brother_utils.py", line 35, in get_white_value
+    raise ValueError(f'Unsupoprted "byInk" GTOPTION value: {by_ink.value}')
+AttributeError: 'xml.etree.ElementTree.Element' object has no attribute 'value'
+
+2020-07-03 00:17:12,361:  Encountered the following recoverable error:
+Barcode: 1145992
+Print mode: Automatic
+Printer: OneNote for Windows 10
+Installed printers: {'Fax', 'Brother GTX-4 FileOutput', 'Microsoft Print to PDF', 'OneNote for Windows 10', 'Microsoft XPS Document Writer'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 160, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 232, in create_design_and_send_to_printer
+    print_properties = get_print_properties(image_file, product_info)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 245, in get_print_properties
+    product_style=vuvutv_utils.get_style(product_info))
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\config.py", line 27, in get_print_profile
+    PLATEN=PLATEN_PROFILES[product_style]))
+KeyError: 'tank top'
+
+2020-07-03 00:20:00,682:  Encountered the following recoverable error:
+Barcode: 1145992
+Print mode: Automatic
+Printer: OneNote for Windows 10
+Installed printers: {'Brother GTX-4 FileOutput', 'Microsoft Print to PDF', 'Microsoft XPS Document Writer', 'Fax', 'OneNote for Windows 10'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 160, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 232, in create_design_and_send_to_printer
+    print_properties = get_print_properties(image_file, product_info)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 248, in get_print_properties
+    product_style=vuvutv_utils.get_style(product_info))
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\config.py", line 28, in get_print_profile
+    PLATEN=PLATEN_PROFILES[style_keyword]))
+  File "C:\Users\hotelca\AppData\Local\Programs\Python\Python37\lib\tempfile.py", line 481, in func_wrapper
+    return func(*args, **kwargs)
+TypeError: a bytes-like object is required, not 'str'
+
+2020-07-03 00:22:31,088:  Encountered the following recoverable error:
+Barcode: 1145992
+Print mode: Automatic
+Printer: OneNote for Windows 10
+Installed printers: {'Microsoft XPS Document Writer', 'Fax', 'Microsoft Print to PDF', 'OneNote for Windows 10', 'Brother GTX-4 FileOutput'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 160, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 232, in create_design_and_send_to_printer
+    print_properties = get_print_properties(image_file, product_info)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 251, in get_print_properties
+    product_style=vuvutv_utils.get_style(product_info))
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\measurements.py", line 63, in get_print_sizing
+    target_image_size = get_target_image_size(image_size, platen)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\measurements.py", line 89, in get_target_image_size
+    target_dim = TARGET_DIM_PER_PLATEN[platen]
+KeyError: '2'
+
+2020-07-03 00:31:19,376:  Encountered the following recoverable error:
+Barcode: 1145992
+Print mode: Automatic
+Printer: OneNote for Windows 10
+Installed printers: {'Microsoft Print to PDF', 'OneNote for Windows 10', 'Microsoft XPS Document Writer', 'Brother GTX-4 FileOutput', 'Fax'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 160, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 232, in create_design_and_send_to_printer
+    print_properties = get_print_properties(image_file, product_info)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 248, in get_print_properties
+    product_style=vuvutv_utils.get_style(product_info))
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\config.py", line 21, in get_print_profile
+    thickness_profile = _get_thickness_profile(product_style)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\config.py", line 38, in _get_thickness_profile
+    style_keyword = PRODUCT_PROPERTIES['style'][product_style]
+KeyError: 'onesie'
+
+2020-07-03 10:01:59,476:  Encountered the following recoverable error:
+Barcode: 1131487-2
+Print mode: Automatic
+Printer: None
+Installed printers: set()
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 152, in get_new_print_job
+    printer = self.get_printer()
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 179, in get_printer
+    f'Installed printers: {self._print_config.printers}.'
+controller.NoPrinterAvailableError: Installed printers: set().Blacklisted printers: set()
+
+2020-07-03 10:02:21,658:  Encountered the following recoverable error:
+Barcode: 1131487-2
+Print mode: Automatic
+Printer: OneNote for Windows 10
+Installed printers: {'OneNote for Windows 10', 'Microsoft XPS Document Writer', 'Fax', 'Brother GTX-4 FileOutput', 'Microsoft Print to PDF'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 159, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 231, in create_design_and_send_to_printer
+    print_properties = get_print_properties(image_file, product_info)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 251, in get_print_properties
+    product_size=vuvutv_utils.get_size(product_info))
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\measurements.py", line 64, in get_print_sizing
+    platen=platen)
+TypeError: get_target_image_size() got an unexpected keyword argument 'image_size'
+
+2020-07-03 10:04:30,051:  Encountered the following recoverable error:
+Barcode: 1131487-2
+Print mode: Automatic
+Printer: OneNote for Windows 10
+Installed printers: {'Microsoft XPS Document Writer', 'Microsoft Print to PDF', 'Brother GTX-4 FileOutput', 'OneNote for Windows 10', 'Fax'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 159, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 231, in create_design_and_send_to_printer
+    print_properties = get_print_properties(image_file, product_info)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 247, in get_print_properties
+    product_style=vuvutv_utils.get_style(product_info))
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\config.py", line 25, in get_print_profile
+    thickness_profile = _get_thickness_profile(product_style)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\config.py", line 42, in _get_thickness_profile
+    style_keyword = PRODUCT_KEYWORDS['style'][product_style]
+KeyError: 'HOODIE'
+
+2020-07-03 10:12:07,998:  Encountered the following recoverable error:
+Barcode: 1131487-2
+Print mode: Automatic
+Printer: OneNote for Windows 10
+Installed printers: {'Brother GTX-4 FileOutput', 'Microsoft Print to PDF', 'Microsoft XPS Document Writer', 'Fax', 'OneNote for Windows 10'}
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 159, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 231, in create_design_and_send_to_printer
+    print_properties = get_print_properties(image_file, product_info)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 251, in get_print_properties
+    product_size=vuvutv_utils.get_size(product_info))
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\measurements.py", line 64, in get_print_sizing
+    platen=platen)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\measurements.py", line 116, in get_target_image_size
+    width = ((target_dim.value / image_size_inches.height) *
+TypeError: unsupported operand type(s) for /: 'str' and 'float'
+
+2020-07-06 21:18:57,534:  Encountered the following recoverable error:
+Barcode: 1131487-2
+Print mode: Automatic
+Printer: None
+Installed printers: set()
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 152, in get_new_print_job
+    printer = self.get_printer()
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 179, in get_printer
+    f'Installed printers: {self._print_config.printers}.'
+controller.NoPrinterAvailableError: Installed printers: set().Blacklisted printers: set()
+
+2020-07-20 22:11:15,688:  Exception occured during design loading.
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\scripts\design_loader.pyw", line 112, in <module>
+    files = download_designs(pending_prints)
+  File "C:\Users\hotelca\PycharmProjects\teerex\scripts\design_loader.pyw", line 72, in download_designs
+    r = requests.get(product_info.design, stream=True)
+AttributeError: 'dict' object has no attribute 'design'
+2020-07-20 22:13:30,423:  Exception occured during design loading.
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\scripts\design_loader.pyw", line 112, in <module>
+    files = download_designs(pending_prints)
+  File "C:\Users\hotelca\PycharmProjects\teerex\scripts\design_loader.pyw", line 77, in download_designs
+    logging.warning(f'Successfully downloaded design: {product_info.design}')
+AttributeError: 'dict' object has no attribute 'design'
+2020-07-20 22:17:30,223:  Exception occured during design loading.
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\scripts\design_loader.pyw", line 111, in <module>
+    exclude_existing_designs(pending_prints)
+  File "C:\Users\hotelca\PycharmProjects\teerex\scripts\design_loader.pyw", line 62, in exclude_existing_designs
+    for barcode in prints:
+RuntimeError: dictionary changed size during iteration
+2020-07-20 22:19:42,812:  Exception occured during design loading.
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\scripts\design_loader.pyw", line 111, in <module>
+    exclude_existing_designs(pending_prints)
+  File "C:\Users\hotelca\PycharmProjects\teerex\scripts\design_loader.pyw", line 62, in exclude_existing_designs
+    for barcode in prints:
+RuntimeError: dictionary changed size during iteration
+2020-07-20 22:33:17,944:  Execution took: 2 s.

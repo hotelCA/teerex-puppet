@@ -1,0 +1,13 @@
+{
+    "HOODIE": {
+        "XS": ["HEIGHT", "9.5"],
+        "S": ["HEIGHT", "10.0"],
+        "M": ["HEIGHT", "10.5"],
+        "L": ["HEIGHT", "11.0"],
+        "XL": ["HEIGHT", "11.5"],
+        "2XL": ["HEIGHT", "11.5"],
+        "3XL": ["HEIGHT", "11.5"],
+        "4XL": ["HEIGHT", "11.5"],
+        "5XL": ["HEIGHT", "11.5"]
+    }
+}

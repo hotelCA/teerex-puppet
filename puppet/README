@@ -1,0 +1,1 @@
+puppet apply --modulepath=.\puppet\modules;C:\Users\hotelca\.puppetlabs\etc\code\modules .\puppet\manifests\site.pp

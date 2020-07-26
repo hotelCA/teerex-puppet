@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GTOPTION xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <szFileName />
+ <uiCopies>1</uiCopies>
+ <byMachineMode>0</byMachineMode>
+ <byPlatenSize>{PLATEN}</byPlatenSize>
+ <byInk>0</byInk>
+ <byResolution>1</byResolution>
+ <byInkVolume>4</byInkVolume>
+ <byDoublePrint>2</byDoublePrint>
+ <bMultiple>false</bMultiple>
+ <bySaturation>5</bySaturation>
+ <byBrightness>5</byBrightness>
+ <byContrast>5</byContrast>
+ <iCyanBalance>0</iCyanBalance>
+ <iMagentaBalance>0</iMagentaBalance>
+ <iYellowBalance>0</iYellowBalance>
+ <iBlackBalance>0</iBlackBalance>
+ <bUniPrint>false</bUniPrint>
+</GTOPTION>
