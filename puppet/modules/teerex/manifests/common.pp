@@ -37,7 +37,7 @@ class teerex::common {
     trigger   => {
       schedule         => daily,
       start_time       => '00:00',
-      minutes_interval => '5',
+      minutes_interval => '30',
       minutes_duration => '1440',
     }
   }
