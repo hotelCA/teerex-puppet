@@ -32,7 +32,7 @@ class teerex::common {
     enabled   => true,
     working_dir  => $puppet_dir,
     command   => "${puppet_dir}\\puppet.bat",
-    arguments => "apply --modulepath=${binary_dir}\\puppet\\modules;${home_dir}\\.puppetlabs\\etc\\code\\modules --logdest=\"${suite_dir}\\logs\\puppet_logs.txt\" ${binary_dir}\\puppet\\manifests\\site.pp",
+    arguments => "apply --modulepath=${binary_dir}\\puppet\\modules;${home_dir}\\PuppetLabs\\code\\modules --logdest=\"${suite_dir}\\logs\\puppet_logs.txt\" ${binary_dir}\\puppet\\manifests\\site.pp",
     trigger   => {
       schedule         => daily,
       start_time       => '00:00',
