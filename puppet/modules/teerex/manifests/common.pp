@@ -4,7 +4,7 @@ class teerex::common {
   $design_loader_checkout = 'teerex-design-loader'
   $print_genie_checkout = 'teerex-print-genie'
   $design_loader_tag = 'v1.0.1'
-  $print_genie_tag = 'v1.0.1'
+  $print_genie_tag = 'v1.0.2'
   $suite_dir = "${home_dir}\\Genie Suite"
   $puppet_dir = "C:\\Program Files\\Puppet Labs\\Puppet\\bin"
 
