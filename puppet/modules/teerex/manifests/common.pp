@@ -1,5 +1,5 @@
 class teerex::common {
-  $home_dir = $facts['windows_env']['ALLUSERSPROFILE']
+  $home_dir = $facts['windows_env']['PROGRAMDATA']
   $puppet_checkout = 'teerex-puppet'
   $design_loader_checkout = 'teerex-design-loader'
   $print_genie_checkout = 'teerex-print-genie'

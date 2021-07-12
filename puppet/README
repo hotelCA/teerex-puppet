@@ -3,4 +3,4 @@ To run Puppet:
 2) Install windows_env module
    cmd: "puppet module install --target-dir=C:\ProgramData\PuppetLabs\code\modules puppet/windows_env"
 3) Run puppet the first time:
-   cmd: "puppet apply --modulepath=.\puppet\modules;C:\Users\hotelca\.puppetlabs\etc\code\modules .\puppet\manifests\site.pp"
+   cmd: "puppet apply --modulepath=.\puppet\modules;C:\ProgramData\PuppetLabs\code\modules .\puppet\manifests\site.pp"
